@@ -1,0 +1,15 @@
+/CarryCommand.class
+/Command.class
+/CommandSequence.class
+/Constant.class
+/Equals.class
+/ForCommand.class
+/HasMaterial.class
+/IfCommand.class
+/NullCommand.class
+/Robot.class
+/ShutDownCommand.class
+/StartUpCommand.class
+/Term.class
+/Variable.class
+/WhileCommand.class
