@@ -39,7 +39,7 @@ public class ChangeAllUser extends HttpServlet {
 			Connection conn = dbobj.connect();
 			Statement stm = conn.createStatement();
 			ResultSet rst = stm.executeQuery("select * from login");
-			Vector vec = new Vector();
+			Vector<User> vec = new Vector<User>();
 			while (rst.next()) {
 				User u = new User(rst.getString("user"), rst.getString("pwd"),
 						rst.getInt("type"));

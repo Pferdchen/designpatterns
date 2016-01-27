@@ -50,13 +50,13 @@ public class DbProc {
 		return n;
 	}
 
-	public List executeQuery(String strSQL) throws Exception {
-		List l = new Vector();
+	public List<Vector<String>> executeQuery(String strSQL) throws Exception {
+		List<Vector<String>> l = new Vector<Vector<String>>();
 		Statement stm = conn.createStatement();
 		ResultSet rst = stm.executeQuery(strSQL);
 		ResultSetMetaData rsmd = rst.getMetaData();
 		while (rst.next()) {
-			Vector unit = new Vector();
+			Vector<String> unit = new Vector<String>();
 			for (int i = 1; i <= rsmd.getColumnCount(); i++) {
 				unit.add(rst.getString(i));
 			}
