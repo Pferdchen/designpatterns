@@ -1,10 +1,17 @@
-# Prerequisite
+# Requirements
   * Eclipse for Java EE Developer
   * Dynamic Web Project
   * Apache Tomcat 8.0
   * MySQL Database
+  * mysql-connector-java-5.1.xx-bin.jar
   
-# Design Patterns
+# Package Classification
+
+## Basis
+  * Interface & abstract class
+  * Reflection
+
+## Design Patterns
   *	Factory
   *	Builder
   *	Observer
@@ -17,4 +24,4 @@
   * Composite
 
 # Notice
-This project contains many subprojects. They are not only Web (Servlet) projects, but alse some Swing/AWT projects.
+This project contains many runable programms. They are not only Web (Servlet) programms, but also some Swing/AWT programms.
