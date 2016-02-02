@@ -1,2 +1,9 @@
+# ignore all build directories
+build
+
+.classpath
+.project
+.tern-project
+.settings
+
 dbconnection.properties
-/build/
