@@ -11,7 +11,7 @@ import java.util.Properties;
 import java.util.Vector;
 
 /**
- * A propertiy file is needed and contains database connection information.
+ * A property file is needed and contains database connection information.
  * The file is named with "dbconnection.properties" and looks like
  * 
  * DB_URL=jdbc:mysql://localhost:3306/test
@@ -19,7 +19,7 @@ import java.util.Vector;
  * DB_PASSWORD=123456
  * DB_DRIVER=com.mysql.jdbc.Driver
  * 
- * @author Yan.Gao
+ * @author Yan Gao
  *
  */
 public class DbProc {
