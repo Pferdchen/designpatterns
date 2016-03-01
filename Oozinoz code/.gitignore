@@ -1,0 +1,4 @@
+.tern-project
+
+# ignore bin directory
+/bin/

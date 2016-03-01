@@ -1,0 +1,7 @@
+# ignore all build directories
+build
+
+.tern-project
+
+# ignore database information
+dbconnection.properties
