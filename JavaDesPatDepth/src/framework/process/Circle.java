@@ -6,6 +6,9 @@ public class Circle implements IShape {
 
 	float r;
 
+	public Circle() {
+	}
+
 	@Override
 	public boolean input() {
 		System.out.println("Please input r:");

@@ -6,6 +6,9 @@ public class Rect implements IShape {
 
 	float width, height;
 
+	public Rect() {
+	}
+
 	@Override
 	public boolean input() {
 		System.out.println("Please input width and height:");
