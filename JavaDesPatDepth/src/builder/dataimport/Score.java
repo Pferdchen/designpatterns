@@ -7,6 +7,9 @@ public class Score {
 
 	private int score;
 
+	public Score() {
+	}
+
 	public Score(String studno, String name, int score) {
 		this.studno = studno;
 		this.name = name;
