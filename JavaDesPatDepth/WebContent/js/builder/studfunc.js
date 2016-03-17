@@ -1,5 +1,10 @@
 var curObj = null;
-var xmlHtpRq = new ActiveXObject("Microsoft.XMLHTTP");
+var xmlHtpRq;
+if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlHtpRq = new XMLHttpRequest();
+} else {// code for IE6, IE5
+	xmlHtpRq = new ActiveXObject("Microsoft.XMLHTTP");
+}
 
 function addEvent(obj, type, fn) {
 	if (obj && obj.attachEvent) { // IE
