@@ -25,4 +25,15 @@
 	<welcome-file-list>
 		<welcome-file>updateinfo.jsp</welcome-file>
 	</welcome-file-list>
+	
+	
+	<servlet>
+		<servlet-name>SALARY</servlet-name>
+		<servlet-class>bridge.bsshow.SalaryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SALARY</servlet-name>
+		<url-pattern>/salaryservlet</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

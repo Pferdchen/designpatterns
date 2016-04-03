@@ -1,6 +1,7 @@
 package db.connection;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -11,12 +12,10 @@ import java.util.Properties;
 import java.util.Vector;
 
 /**
- * A property file is needed and contains database connection information.
- * The file is named with "dbconnection.properties" and looks like
+ * A property file is needed and contains database connection information. The
+ * file is named with "dbconnection.properties" and looks like
  * 
- * DB_URL=jdbc:mysql://localhost:3306/test
- * DB_USER=root
- * DB_PASSWORD=123456
+ * DB_URL=jdbc:mysql://localhost:3306/test DB_USER=root DB_PASSWORD=123456
  * DB_DRIVER=com.mysql.jdbc.Driver
  * 
  * @author Yan Gao
@@ -30,8 +29,9 @@ public class DbProc {
 	private Connection conn;
 
 	public Connection connect() throws Exception {
+		InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("dbconnection.properties");
 		Properties p = new Properties();
-		p.load(new FileInputStream("dbconnection.properties"));
+		p.load(inputStream);
 
 		strDriver = p.getProperty("DB_DRIVER");
 		strDb = p.getProperty("DB_URL");
